@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+}
+
+.banner_header{
+    background: url('https://img.freepik.com/free-photo/seoul-city-and-downtown-at-night-south-korea_174052-71.jpg?size=626&ext=jpg') center / cover;
+    width: 100%;
+    height: 100vh;
+}
+.banner_header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+}
+.banner_header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top , rgb(25, 41, 85) , transparent);
+    left: 0;
+    bottom: 0;
+}
+
+.center_header{
+    width: 80%;
+    margin: auto;
+}
+.inline_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.inline_header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: 0;
+}
+.inline_header ul{
+    list-style: none;
+    margin: 0%;
+    padding-left: 0;
+    padding: 20px 0;
+}
+
+.left_list{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+.left_list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.logo{
+    position: relative;
+}
+.logo li a{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.right_list{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+.right_list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.toggleIcon li a{
+    text-decoration: none;
+}
+.toggleIcon li a  i{
+    color: white;
+    font-size: 20px;
+    list-style: none;
+    display: none;
+}
+
+
+.title{
+    width: 85%;
+    margin: auto;
+    padding-top: 50px;
+    position: relative;
+}
+.title h1{
+    font-size: 50px;
+    color: white;
+}
+.title p{
+    color: white;
+    width: 600px;
+    font-size: 20px;
+}
+
+.links{
+    margin-top: 50px;
+}
+.links a{
+    color: black;
+    background: white;
+    padding: 15px 50px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+@media (max-width:697px){
+    .left_list{
+        display: none;
+    }
+    .right_list{
+        display: none;
+    }
+    .toggleIcon li a i{
+        display: block;
+    }
+}
+
+@media (max-width:650px){
+    .title{
+        width: 70%;
+    }
+    .title h1{
+        font-size: 40px;
+    }
+    .title p{
+        font-size: 17px;
+        width: 100%;
+    }
+}
+
+
+
+.active{
+    color: black !important; 
+    background: white;
+    padding: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
